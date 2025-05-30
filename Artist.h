@@ -6,13 +6,15 @@
 using namespace std;
 
 class Artist {
-public:
-    string firstName, lastName, nationality, mainStyle, biography;
-    string birthDate;
-    map<string, string> contact;
+    private:
+        string firstName, lastName, nationality, mainStyle, biography;
+        string birthDate;
+        map<string, string> contact;
 
-    string getFullName() const;
-    void updateContact(const string& type, const string& value);
+    public:
+        Artist(string fn, string ln, string birth, string nat, string style, string bio);
+        string getFullName() const;
+        void updateContact(const string& type, const string& value);
 };
 
 #endif
