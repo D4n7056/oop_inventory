@@ -6,13 +6,14 @@
 #define ARTWORK_H
 
 class Artwork {
-    public:
+    private:
         string id, title, type, dimensions, status, location, description;
         string creationYear, acquisitionDate;
         float salePrice = 0.0;
         Artist* artist = nullptr;
         vector<std::string> materials;
 
+    public:
         void markAsSold(float finalPrice);
         void updatePrice(float newPrice);
         void changeStatus(const string& newStatus);
