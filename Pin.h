@@ -5,7 +5,7 @@
 
 class Pin : public Product {
 public:
-    Pin(string id, string name, float price, int stock);
+    Pin(string id, string name, string description, float price, int stock);
     string showInfo() const override;
 };
 #endif
