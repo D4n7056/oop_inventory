@@ -1,4 +1,5 @@
 #include "Product.h"
+
 using namespace std;
 
 #ifndef STICKER_H
@@ -6,8 +7,7 @@ using namespace std;
 
 class Sticker : public Product {
 public:
-    Sticker(string id, string name, float price, int stock)
-        : Product(id, name, "Sticker", price, stock) {}
+    Sticker(string id, string name, string description, float price, int stock);
     string showInfo() const override;
 };
 
