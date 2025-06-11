@@ -7,7 +7,7 @@ using namespace std;
 
 class Drawing : public Product {
 public:
-    Drawing(string id, string name, float price, int stock);
+    Drawing(string id, string name, string description, float price, int stock);
     string showInfo() const override;
 };
 
